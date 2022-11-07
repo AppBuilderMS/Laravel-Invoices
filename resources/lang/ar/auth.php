@@ -1,0 +1,21 @@
+<?php
+
+return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Authentication Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines are used during authentication for various
+    | messages that we need to display to the user. You are free to modify
+    | these language lines according to your application's requirements.
+    |
+    */
+
+    'failed' => 'البيانات التى تم إدخالها غير مطابقة لقواعد البيانات .',
+    'password' => 'كلمة المرور غير صحيحة .',
+    'throttle' => 'محاولات تسجيل دخول كثيرة جدًا. يرجى المحاولة مرة أخرى خلال: ثواني .',
+    'not_active' => 'حسابك غير فعال برجاء مراجعة الإدارة لتفعيل الحساب .',
+
+];

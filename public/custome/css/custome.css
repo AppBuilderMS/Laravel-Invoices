@@ -1,0 +1,398 @@
+
+@font-face { font-family: 'Droid Arabic Kufi'; font-style: normal; font-weight: 400;
+            src: url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Regular.eot);
+            src: url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Regular.eot?#iefix) format('embedded-opentype'),
+            url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Regular.woff2) format('woff2'),
+            url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Regular.woff) format('woff'),
+            url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Regular.ttf) format('truetype'); }
+@font-face { font-family: 'Droid Arabic Kufi'; font-style: normal; font-weight: 700;
+            src: url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Bold.eot);
+            src: url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Bold.eot?#iefix) format('embedded-opentype'),
+            url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Bold.woff2) format('woff2'),
+            url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Bold.woff) format('woff'),
+            url(//fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Bold.ttf) format('truetype'); }
+
+@font-face { font-family: 'Droid Arabic Naskh'; font-style: normal; font-weight: 400;
+            src: url(//fonts.gstatic.com/ea/droidarabicnaskh/v7/DroidNaskh-Regular.eot);
+            src: url(//fonts.gstatic.com/ea/droidarabicnaskh/v7/DroidNaskh-Regular.eot?#iefix) format('embedded-opentype'),
+            url(//fonts.gstatic.com/ea/droidarabicnaskh/v7/DroidNaskh-Regular.woff2) format('woff2'),
+            url(//fonts.gstatic.com/ea/droidarabicnaskh/v7/DroidNaskh-Regular.woff) format('woff'),
+            url(//fonts.gstatic.com/ea/droidarabicnaskh/v7/DroidNaskh-Regular.ttf) format('truetype'); }
+@font-face { font-family: 'Droid Arabic Naskh'; font-style: normal; font-weight: 700;
+            src: url(//fonts.gstatic.com/ea/droidarabicnaskh/v7/DroidNaskh-Bold.eot);
+            src: url(//fonts.gstatic.com/ea/droidarabicnaskh/v7/DroidNaskh-Bold.eot?#iefix) format('embedded-opentype'),
+            url(//fonts.gstatic.com/ea/droidarabicnaskh/v7/DroidNaskh-Bold.woff2) format('woff2'),
+            url(//fonts.gstatic.com/ea/droidarabicnaskh/v7/DroidNaskh-Bold.woff) format('woff'),
+            url(//fonts.gstatic.com/ea/droidarabicnaskh/v7/DroidNaskh-Bold.ttf) format('truetype'); }
+
+/*start body*/
+.english {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+.arabic {
+    /* font-family: 'Cairo', sans-serif; */
+    /*font-family: 'Droid Arabic Naskh';*/
+    /*font-family: 'Droid Arabic Kufi';*/
+    font-family: 'Amiri', serif;
+    font-size: 16px;
+}
+/*.app-body .main {*/
+/*    margin-top: 55px;*/
+/*}*/
+.main .container-fluid {
+    padding: 0 55px;
+}
+/*end body*/
+
+/*start admin header*/
+.fixed-header {
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+}
+.app-header {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+.navbar-nav a.nav-link.lang{
+    color: #869ab8 !important;
+}
+.navbar-nav  a.nav-link.lang:hover{
+    color: #384c74 !important;
+}
+.navbar-nav .dropdown-item.active, .dropdown-item:active {
+    color: #7c69ef;
+    text-decoration: none;
+    background-color: rgba(0,0,0,.02);
+}
+/*end admin header*/
+
+/*start admin sidebar*/
+html[dir=rtl] .sidebar {
+    margin-right: -225px;
+}
+.sidebar.sidebar-pills {
+    background-color: #161c2d;
+    /*margin-top: 55px;*/
+}
+@media (min-width: 992px){
+    .sidebar-fixed .sidebar {
+        width: 225px;
+    }
+}
+.sidebar.sidebar-pills .nav-title {
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    font-size: 14px;
+    color: #4c4e6f;
+}
+.sidebar.sidebar-pills .nav-link {
+    color: #a2a3b7 !important;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: initial;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s ease-in-out;
+}
+.sidebar.sidebar-pills .nav-link span {
+    font-size: 13px;
+}
+.sidebar.sidebar-pills .nav-link i{
+    color: #4c4e6f !important;
+}
+.sidebar.sidebar-pills .nav-link.active {
+    color: #fff !important;
+    background:#1e293b !important;
+}
+.sidebar.sidebar-pills .nav-link:hover {
+    color: #fff !important;
+    background:#1e293b !important;
+}
+.sidebar.sidebar-pills .nav-link:hover i{
+    color: #63f7ee !important;
+}
+.sidebar.sidebar-pills .nav-link.active i{
+    color: #63f7ee !important;
+}
+.sidebar.sidebar-pills .nav-dropdown.open {
+    background: #1e293b;
+}
+.sidebar.sidebar-pills .nav-dropdown.open .nav-link {
+    color: #a2a3b7 !important;
+}
+.sidebar.sidebar-pills .nav-dropdown.open .nav-link.active {
+    color: #fff !important;
+    background: #454e5e !important;
+}
+.sidebar.sidebar-pills .nav-dropdown.open .nav-link:hover {
+    color: #FFF !important;
+    background: #454e5e !important;
+}
+.sidebar.sidebar-pills .nav-dropdown .nav-link span{
+    font-size: 14px;
+}
+.sidebar.sidebar-pills .nav-dropdown.open .nav-link.nav-dropdown-toggle {
+    font-weight: 300 !important;
+    background:#1e293b !important;
+    color: #FFF !important;
+}
+.sidebar.sidebar-pills .nav-dropdown.open .nav-link.nav-dropdown-toggle:hover {
+    background: #454e5e !important;
+}
+.sidebar.sidebar-pills .nav-dropdown.open .nav-link.nav-dropdown-toggle i{
+    color: #63f7ee !important;
+}
+.sidebar.sidebar-pills .nav-dropdown .nav-link:not(.nav-dropdown-toggle) {
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+}
+/*end admin sidebar*/
+
+/*page heading*/
+.heading {
+    margin: 1em 0 0.5em 0;
+    font-weight: 700;
+    padding: 15px 15px 15px;
+    color: #394d75;
+    box-shadow: inset 0 0 0 1px rgb(53 86 129 / 40%), inset 0 0 5px rgb(53 86 129 / 50%), inset -285px 0 35px white;
+    border-radius: 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+html[dir=rtl] .heading{
+    font-family: 'Aref Ruqaa', serif;
+}
+/*page heading*/
+
+/*Start Data tables*/
+table.dataTable.no-footer {
+    width: 100% !important;
+    font-size: 16px;
+}
+div.dataTables_wrapper div.dataTables_length select {
+    width: 100px !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0 !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button .page-link {
+    border-radius: 3px;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.page-item:hover {
+    border: 1px solid transparent;
+    background: transparent;
+}
+html[dir=rtl] div.table-responsive>div.dataTables_wrapper>div.row{
+    margin: 0;
+    direction: ltr;
+}
+html[dir=rtl] div.table-responsive>div.dataTables_wrapper>div.row:nth-of-type(2) {
+    margin: 0;
+    direction: rtl;
+}
+html[dir=rtl] .btn-group, .btn-group-vertical {
+    position: absolute;
+    left: 0;
+}
+@media screen and (max-width: 640px){
+    .export-pages .dataTables_wrapper .dataTables_filter {
+        margin-top: 0.5em;
+        margin-top: 50px;
+    }
+}
+[dir=rtl] .btn-group>.btn-group:not(:last-child)>.btn, [dir=rtl] .btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
+    border-radius: .25rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+[dir=rtl] .btn-group>.btn-group:not(:first-child)>.btn, [dir=rtl] .btn-group>.btn:not(:first-child) {
+    border-radius: .25rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.dt-buttons .btn {
+    background-color: #394d75;
+    border-color: #394d75;
+}
+.dt-buttons .btn:hover {
+    background-color: #1e293b;
+    border-color: #1e293b;
+}
+[dir=rtl] table.dataTable thead .sorting,
+[dir=rtl] table.dataTable thead .sorting_asc,
+[dir=rtl] table.dataTable thead .sorting_desc{
+    background-image: none;
+}
+[dir=ltr] table.dataTable thead .sorting,
+[dir=ltr] table.dataTable thead .sorting_asc,
+[dir=ltr] table.dataTable thead .sorting_desc{
+    background-image: none;
+}
+a.page-link {
+    color: #1e293b;
+}
+.page-item.active .page-link {
+    background-color: #394d75;
+    border-color: #394d75;
+}
+.dt-button.page-item.active .page-link:hover {
+    background-color: #1e293b;
+    border-color: #1e293b;
+}
+.dt-button.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background: #394d75 !important;
+}
+#example_wrapper > div:nth-child(1) > div:nth-child(1) > div > button.btn.btn-primary.buttons-collection.dropdown-toggle.buttons-colvis:focus {
+    background-color: #394d75;
+    outline-style: none;
+    border-color: #394d75;
+}
+table.table-bordered.dataTable th:last-child,
+table.table-bordered.dataTable td:last-child{
+    border-right-width: 1px !important;
+}
+/*End Data tables*/
+
+/*Start Modals*/
+.modal-backdrop {
+    z-index: 99999;
+}
+.modal {
+    z-index: 999999;
+}
+.modal.show .modal-dialog {
+    margin-top: 100px;
+}
+[dir=rtl] .modal-header .close {
+    margin: -1rem -1rem -1rem;
+}
+[dir=rtl] .modal-footer>:not(:first-child) {
+    margin-right: .25rem;
+}
+[dir=rtl] .modal-footer>:not(:last-child) {
+    margin-left: .25rem;
+}
+/*End Modals*/
+/*Start Datepicker*/
+.datepicker{
+    z-index: 9999999 !important;
+}
+.datepicker-rtl {
+    z-index: 99999;
+    width: fit-content;
+    direction: rtl !important;
+}
+.datepicker-ar {
+    direction: rtl !important;
+}
+/*End Datepicker*/
+
+/*Start bootstrap-fileinput*/
+.kv-zoom-actions .btn-outline-secondary i{
+    color: #252934;
+}
+.file-preview .fileinput-remove {
+    top: 5px !important;
+    right: 5px !important;
+}
+.file-footer-buttons .btn-outline-secondary i {
+    color: #252934;
+}
+/*End bootstrap-fileinput*/
+
+.forceDeleteBtn {
+    position: absolute;
+    width: fit-content;
+    left: 181px;
+    top: 110px;
+}
+[dir=rtl] .forceDeleteBtn{
+    right: 141px;
+}
+
+.form-group.required label:not(:empty):not(.form-check-label)::after {
+    content: ' *';
+    color: red;
+}
+
+.middle-align{
+    vertical-align: middle !important;
+}
+
+/*Start notification dropdown*/
+.notification_container{
+    border-top-left-radius: .5rem!important;
+    border-top-right-radius: .5rem!important;
+}
+.notification_container .card{
+    width: 350px;
+    margin-bottom: 0;
+    padding: 0;
+    border: none !important;
+    border-top-left-radius: .42rem!important;
+    border-top-right-radius: .42rem!important;
+}
+.notification_container .card .card-header{
+    padding: 0;
+    border-top-left-radius: .42rem!important;
+    border-top-right-radius: .42rem!important;
+}
+.notification_container .card .card-body{
+    padding: 10px 0px;
+}
+.notification_container .card .card-body .nav-item {
+    text-decoration: none;
+}
+.notification_container .card .card-body .nav-link {
+    padding: 10px 15px;
+    transition: all 0.1s ease-in-out;
+}
+.notification_container .card .card-body .nav-link:hover{
+    background-color: #f5f5f5;
+}
+.notification_container .card .card-body .nav-link .nav-icon {
+    background-color: rgba(34, 166, 179,0.3);
+    border-radius: 3px;
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.notification_container .card .card-body .nav-link .success-bg {
+    background-color: rgba(34, 166, 179,0.3);
+}
+.notification_container .card .card-body .nav-link .info-bg {
+    background-color: rgba(30, 144, 255,0.3);
+}
+.notification_container .card .card-body .nav-link .warning-bg {
+    background-color: rgba(253, 203, 110,0.3);
+}
+.notification_container .card .card-body .nav-link .danger-bg {
+    background-color: rgba(255, 71, 87,0.3);
+}
+.notification_container .card .card-body .nav-link .nav-icon i{
+    line-height: 45px;
+    font-size: 35px;
+}
+.notification_container .card .card-body .nav-link .nav-text div{
+    text-align: start;
+    font-size: 14px;
+}
+.notification_head{
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    border-top-left-radius: .42rem!important;
+    border-top-right-radius: .42rem!important;
+    padding-top: 2rem!important;
+    width: 350px;
+    height: 131px;
+}
+.notification_head .header-btn{
+    cursor: pointer;
+}
+/*End notification dropdown*/
+
+
+
