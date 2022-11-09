@@ -2,7 +2,7 @@
 
 ## About Laravel-Invoices
 
-Laravel application that manages invoices for debt collection includes adding, editing, deleting departments, products, and invoices and automatically adjusting invoice status to paid or partially paid, or unpaid and printing invoices and contains a notifications system and users permissions and supporting multiple languages.
+Laravel application that manages invoices for debt collection includes adding, editing, deleting departments, products, and invoices and automatically adjusting invoice status to paid or partially paid, or unpaid and printing invoices and archiving invoices and restoring them from the archive and contains notifications system and users permissions and supporting multiple languages.
 
 ## Screenshots
 
